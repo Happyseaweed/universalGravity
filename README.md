@@ -1,5 +1,6 @@
 # universalGravity
 A program made with Java in Processing that simulates how different planets effect each other's orbits.
+NOTE: The uploaded file is a processing file, not a .java file.
 
 Controls:
   [Left mouse button] = spawn a new planet.
