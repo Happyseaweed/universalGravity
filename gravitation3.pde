@@ -113,16 +113,13 @@ void draw(){
           
           planets.get(j).acc.x += -xs*F*cos(theta)/planets.get(j).mass;
           planets.get(j).acc.y += -ys*F*sin(theta)/planets.get(j).mass;
-        }
-        stroke(255);
-        line(planets.get(i).pos.x, planets.get(i).pos.y, planets.get(i).pos.x+100*planets.get(i).vel.x, planets.get(i).pos.y+100*planets.get(i).vel.y);
-        line(planets.get(j).pos.x, planets.get(j).pos.y, planets.get(j).pos.x+100*planets.get(j).vel.x, planets.get(j).pos.y+100*planets.get(j).vel.y);
-        stroke(200,0,0);
-        strokeWeight(3);
-        line(planets.get(i).pos.x, planets.get(i).pos.y, planets.get(i).pos.x+10000*planets.get(i).acc.x, planets.get(i).pos.y+10000*planets.get(i).acc.y);
-        line(planets.get(j).pos.x, planets.get(j).pos.y, planets.get(j).pos.x+10000*planets.get(j).acc.x, planets.get(j).pos.y+10000*planets.get(j).acc.y);
-      
+        }      
       }
+      stroke(255);
+      line(planets.get(i).pos.x, planets.get(i).pos.y, planets.get(i).pos.x+100*planets.get(i).vel.x, planets.get(i).pos.y+100*planets.get(i).vel.y);
+      stroke(200,0,0);
+      strokeWeight(3);
+      line(planets.get(i).pos.x, planets.get(i).pos.y, planets.get(i).pos.x+10000*planets.get(i).acc.x, planets.get(i).pos.y+10000*planets.get(i).acc.y);
       planets.get(i).update_planet();
       circle(planets.get(i).pos.x, planets.get(i).pos.y, planets.get(i).radius);
     }
